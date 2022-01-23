@@ -12,7 +12,7 @@ check('((()))()', [['(', ')']]) // -> true
 check('())(', [['(', ')']]) // -> false
 check('([{}])', [['(', ')'], ['[', ']'], ['{', '}']]) // -> true
 check('[(])', [['(', ')'], ['[', ']']]) // -> false
-check('[]()', [['(', ')'], ['[', ']']]) // -> true
+check('', [['(', ')'], ['[', ']']]) // -> true
 check('[]()(', [['(', ')'], ['[', ']']]) // -> false
 
 // special case: opening and closing bracket can be the same :)
@@ -24,3 +24,7 @@ check('|()|(||)||', [['(', ')'], ['|', '|']]) // -> true
 ```
 
 Write your code in `src/index.js`
+
+// {[( })]}
+
+//
